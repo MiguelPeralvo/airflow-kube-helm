@@ -11,7 +11,7 @@ airflow:
   ## Generate fernet_key with:
   ##    python -c "from cryptography.fernet import Fernet; FERNET_KEY = Fernet.generate_key().decode(); print(FERNET_KEY)"
   ## fernet_key: ABCDABCDABCDABCDABCDABCDABCDABCDABCDABCD
-  fernet_key: "abcdefghijklmnopqrstuvwxyzABCDEFG1234567890="
+  fernet_key: "FCDPyxFGtznKUalt5XvF8UwA5YEXcV1VIi_D2sGVLtk="
   service:
     type: NodePort
   ##
@@ -98,7 +98,7 @@ airflow:
     ##
     ## Configure Git repository to fetch DAGs
     git:
-      url: https://github.com/apache/airflow
+      url: https://github.com/MiguelPeralvo/airflow-dags
       branch: master
       subpath: dags
       ##

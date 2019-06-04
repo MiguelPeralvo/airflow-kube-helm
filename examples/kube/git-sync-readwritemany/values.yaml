@@ -1,9 +1,9 @@
 airflow:
   # Don't use this fernet key in production!
-  fernet_key: "j0PNE8131Vx-ix7BsNDwskFUlnLa00mWU17BRujVcdY="
+  fernet_key: "FCDPyxFGtznKUalt5XvF8UwA5YEXcV1VIi_D2sGVLtk="
   image:
-    repository: <YOUR/IMAGE/URL>
-    tag: <TAG>
+    repository: airflow
+    tag: latest
     pull_policy: IfNotPresent
   config:
   logs:
@@ -16,12 +16,12 @@ airflow:
       # Play around with different repositories, branches and subpaths
       # subpath is the relative directory path in the git repository where
       # the dags can be found.
-      url: https://github.com/apache/airflow
+      url: https://github.com/MiguelPeralvo/airflow-dags
       branch: master
-      subpath: airflow/example_dags
+      subpath: dags
+      wait: 60
   rbac:
     enabled: false
-
 
 ingress:
   enabled: false
