@@ -25,7 +25,7 @@ airflow:
   image:
     ##
     ## docker-airflow image
-    repository: airflow
+    repository: lordastinus/airflow
     ##
     ## image tag
     tag: latest
